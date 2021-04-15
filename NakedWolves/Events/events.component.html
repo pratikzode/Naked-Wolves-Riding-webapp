@@ -1,0 +1,21 @@
+<h1>Events @Naked Wolves</h1>
+<table align="center">
+    <thead>
+        <th>Event Name</th>
+        <th>Event Date</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+    </thead>
+    <tbody *ngFor="let i of eve">
+        <tr>
+            <td>{{i.eventName}}</td>
+            <td>{{i.eventDate|date:"mediumDate"}}</td>
+            <td>{{i.from}}</td>
+            <td>{{i.to}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.contactNo}}</td>
+        </tr>
+    </tbody>
+</table>
